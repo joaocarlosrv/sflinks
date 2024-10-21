@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+html {
+    height: 100vh;
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+header img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;    
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    text-align: center;   
+}
+
+.botoes a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1em 2em;
+    text-decoration: none;
+    border: 1px solid #c0c0c0;
+    border-radius: 10em;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: #c0c0c0;
+}
+
+a.link i{
+    font-size: 1.5em;
+}
+
+.botoes a:hover{
+    background-color: #c0c0c0;
+    color: #000000;
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 0 #c0c0c0;   
+}
+
+button:active{
+    transform: translateY(2px) translateX(1px);
+    box-shadow: #c0c0c0;
+    border: 1px solid #000000;
+    border-radius: 10em;   
+}
+
+footer{
+    text-align: center; 
+    margin: 30px;
+}
+
+footer a.btn-footer{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    line-height: 60px;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer .btn-footer:hover {
+    color: #888;
+}
