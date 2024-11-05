@@ -33,6 +33,7 @@ header {
 }
 
 header img {
+    padding: 10px;
     width: 100%;
     max-width: 600px;
     height: auto;    
@@ -59,18 +60,18 @@ header img {
     color: rgb(255, 255, 255);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: #c0c0c0;
-}
-
-a.link i{
-    font-size: 1.2em;
+    box-shadow: 0px 4px 10px rgba(192, 192, 192, 0.3);
 }
 
 .botoes a:hover{
     background-color: #c0c0c0;
     color: #000000;
     transform: translateY(-4px) translateX(-2px);
-    box-shadow: 2px 5px 0 0 0 #c0c0c0;   
+    box-shadow: 0px 6px 15px rgba(192, 192, 192, 0.5);   
+}
+
+a.link i{
+    font-size: 1.2em;
 }
 
 button:active{
@@ -80,6 +81,7 @@ button:active{
 
 footer{
     text-align: center; 
+    padding: 10px;
     margin: 30px;
 }
 
@@ -90,10 +92,31 @@ footer a.btn-footer{
     font-size: 1.5em;
     line-height: 60px;
     margin: 0 10px;
-    color: white;
-    transition: color 0.3s ease;
+    color: #c0c0c0;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 footer .btn-footer:hover {
     color: #888;
+    transform: translateY(2px) translateX(1px);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 14px;
+    }
+
+    .botoes a {
+        font-size: 16px;
+        padding: 0.8em 1.5em;
+    }
+
+    footer .btn-footer {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3em;
+        line-height: 50px;
+    }
 }
